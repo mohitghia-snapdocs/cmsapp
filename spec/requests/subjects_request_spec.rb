@@ -16,8 +16,8 @@ RSpec.describe "Subjects", type: :request do
     describe "POST subjects#create" do
         it 'create subject with valid attributes' do
             subject_params = { 
-                name: 'Maths',
-                position: 1,
+                name: 'Physics',
+                position: 2,
                 visible: true
             } 
 
@@ -30,14 +30,14 @@ RSpec.describe "Subjects", type: :request do
     describe 'PUT subjects#update' do
         it 'should update the position' do
             subject_params = { 
-                name: 'Maths',
-                position: 1,
+                name: 'Physics',
+                position: 2,
                 visible: true
             }
     
             new_subject_params = { 
-                name: 'Maths',
-                position: 2,
+                name: 'Physics',
+                position: 3,
                 visible: true
             }
 
@@ -50,8 +50,8 @@ RSpec.describe "Subjects", type: :request do
     describe 'DELETE subjects#destroy' do
         it 'should create and delete the object' do
             subject_params = { 
-                name: 'Maths',
-                position: 1,
+                name: 'Physics',
+                position: 2,
                 visible: true
             }
 
